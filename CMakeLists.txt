@@ -64,6 +64,8 @@ find_package(catkin REQUIRED
    DIRECTORY srv
    FILES
    AddDevice.srv
+   CheckDevice.srv
+   RemoveDevice.srv
  )
 
 
