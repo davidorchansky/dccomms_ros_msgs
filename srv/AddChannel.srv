@@ -1,0 +1,6 @@
+uint32 id
+#Type: 0: acoustic underwater channel
+uint32 type
+
+---
+bool res

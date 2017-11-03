@@ -1,0 +1,5 @@
+string dccommsId
+uint32 channelId
+
+---
+bool res
