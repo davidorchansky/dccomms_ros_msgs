@@ -68,6 +68,7 @@ find_package(catkin REQUIRED
    RemoveDevice.srv
    AddChannel.srv
    LinkDeviceToChannel.srv
+   StartSimulation.srv
  )
 
 
