@@ -1,10 +1,7 @@
 uint32 id
-float32 trTimeMean
-float32 trTimeSd
-float32 minPrTime
-float32 prTimeIncPerMeter
-#Error rate: 0.0 - 1.0
-float64 minPktErrorRate
-float64 pktErrorRateIncPerMeter
+float64 minPrTime
+float64 prTimeIncPerMeter
 
+---
+bool res
 

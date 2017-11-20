@@ -1,0 +1,17 @@
+string dccommsId
+uint32 mac
+string frameId
+uint32 maxBitRate
+
+float64 trTimeMean
+float64 trTimeSd
+
+uint32 maxDistance
+uint32 minDistance
+
+#Error rate: 0.0 - 1.0
+float64 minPktErrorRate
+float64 pktErrorRateIncPerMeter
+
+---
+bool res
