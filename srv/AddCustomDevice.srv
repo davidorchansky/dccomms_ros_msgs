@@ -3,8 +3,8 @@ uint32 mac
 string frameId
 uint32 maxBitRate
 
-float64 trTimeMean
-float64 trTimeSd
+float64 bitrate
+float64 bitrateSd
 
 uint32 maxDistance
 uint32 minDistance
