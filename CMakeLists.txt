@@ -63,10 +63,10 @@ find_package(catkin REQUIRED
  add_service_files(
    DIRECTORY srv
    FILES
-   AddDevice.srv
+   AddAcousticDevice.srv
    CheckDevice.srv
    RemoveDevice.srv
-   AddChannel.srv
+   AddAcousticChannel.srv
    LinkDeviceToChannel.srv
    StartSimulation.srv
    AddCustomDevice.srv
