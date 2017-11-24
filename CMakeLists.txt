@@ -65,6 +65,7 @@ find_package(catkin REQUIRED
    FILES
    AddAcousticDevice.srv
    CheckDevice.srv
+   CheckChannel.srv
    RemoveDevice.srv
    AddAcousticChannel.srv
    LinkDeviceToChannel.srv
