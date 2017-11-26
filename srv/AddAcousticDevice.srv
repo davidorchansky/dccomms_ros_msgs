@@ -2,10 +2,43 @@ string dccommsId
 uint32 type
 uint32 mac
 string frameId
+
+#It should be lower or equals to the modem's bitrate. The WaitForDeviceReadyToTransmit() method
+#in CommsDeviceService depends on this attribute. The device will be ready to transmit the next packet
+#after packetSize/maxBitRate seconds. If the upper layer requests to send another packet while the device
+#is "busy" the packet will be inserted in a FIFO queue.
 uint32 maxBitRate
 
-#energyModel 0: acoustic device
-uint32 energyModel
+#Transmitted signal power (W).
+float64 PT
+
+#Power consumption for transmission (W). Default is 0.660 (1.6W).
+uint32 PTConsume
+
+#Power consumption for reception (W). Default is 0.395 (1.2W).
+uint32 PRConsume
+
+#Idle power consumption (W). Default is 0.0 (0W).
+uint32 PIdle
+
+#Mac protocol
+# 0: broadcast MAC
+# 1: T-MAC
+# 2: FAMA
+# 3: Slotted-FAMA
+# 4: UWAN-MAC
+# 5: COPE-MAC
+# 6: ALOHA
+# 7: R-MAC
+# 8: GOAL
+
+#Routing protocol
+# 0: VBF
+# 1: VBVA
+# 2: DBR
+# 3: Static
+# 4: Dynamic
+# 5: Dummy
 
 ---
 bool res
