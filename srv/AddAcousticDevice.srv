@@ -2,12 +2,10 @@ string dccommsId
 uint32 type
 uint32 mac
 string frameId
+uint32 maxTxFifoSize
 
-#It should be lower or equals to the modem's bitrate. The WaitForDeviceReadyToTransmit() method
-#in CommsDeviceService depends on this attribute. The device will be ready to transmit the next packet
-#after packetSize/maxBitRate seconds. If the upper layer requests to send another packet while the device
-#is "busy" the packet will be inserted in a FIFO queue.
-uint32 maxBitRate
+#bitrate = bps
+uint32 bitrate
 
 #Transmitted signal power (W).
 float64 PT

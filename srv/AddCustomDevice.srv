@@ -1,7 +1,7 @@
 string dccommsId
 uint32 mac
 string frameId
-uint32 maxBitRate
+uint32 maxTxFifoSize
 
 float64 bitrate
 float64 bitrateSd
