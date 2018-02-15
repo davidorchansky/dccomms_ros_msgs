@@ -7,8 +7,9 @@ namespace dccomms_ros {
 
 using namespace std;
 
-enum DEV_TYPE { ACOUSTIC_UNDERWATER_DEV, CUSTOM_DEV};
-enum CHANNEL_TYPE { ACOUSTIC_UNDERWATER_CHANNEL, CUSTOM_CHANNEL};
+enum CHANNEL_LINK_TYPE { CHANNEL_TXRX = 0, CHANNEL_TX, CHANNEL_RX };
+enum DEV_TYPE { ACOUSTIC_UNDERWATER_DEV, CUSTOM_DEV };
+enum CHANNEL_TYPE { ACOUSTIC_UNDERWATER_CHANNEL, CUSTOM_CHANNEL };
 
 static string DevType2String(DEV_TYPE dev) {
   string res;
@@ -17,7 +18,7 @@ static string DevType2String(DEV_TYPE dev) {
     res = "ACOUSTIC_UNDERWATER";
     break;
   case CUSTOM_DEV:
-    res ="CUSTOM";
+    res = "CUSTOM";
     break;
   }
   return res;
@@ -30,12 +31,11 @@ static string ChannelType2String(CHANNEL_TYPE v) {
     res = "ACOUSTIC_UNDERWATER";
     break;
   case CUSTOM_CHANNEL:
-    res ="CUSTOM";
+    res = "CUSTOM";
     break;
   }
   return res;
 }
-
 }
 
 #endif
