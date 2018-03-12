@@ -7,36 +7,41 @@ uint32 maxTxFifoSize
 #bitrate = bps
 uint32 bitrate
 
+#Maximum transmission range in m (W).
+float64 range
+
 #Transmitted signal power (W).
 float64 PT
 
+#The frequency, default is 25(khz).
+float64 frequency
+
+#System loss default factor
+float64 L
+
+#Energy spread factor, spherical spreading
+float64 K
+
+#Energy consumption for turning on the modem (J)
+float64 turnOnEnergy
+
+#Energy consumption for turning off the modem (J)
+float64 turnOffEnergy
+
+#Duration of preamble
+float64 preamble
+
 #Power consumption for transmission (W). Default is 0.660 (1.6W).
-uint32 PTConsume
+float64 PTConsume
 
 #Power consumption for reception (W). Default is 0.395 (1.2W).
-uint32 PRConsume
+float64 PRConsume
 
 #Idle power consumption (W). Default is 0.0 (0W).
-uint32 PIdle
+float64 PIdle
 
-#Mac protocol
-# 0: broadcast MAC
-# 1: T-MAC
-# 2: FAMA
-# 3: Slotted-FAMA
-# 4: UWAN-MAC
-# 5: COPE-MAC
-# 6: ALOHA
-# 7: R-MAC
-# 8: GOAL
-
-#Routing protocol
-# 0: VBF
-# 1: VBVA
-# 2: DBR
-# 3: Static
-# 4: Dynamic
-# 5: Dummy
+#Mac protocol: broadcast MAC ; T-MAC ; FAMA ; Slotted-FAMA ; UWAN-MAC ; COPE-MAC ; ALOHA ; R-MAC ; GOAL
+string macProtocol
 
 ---
 bool res

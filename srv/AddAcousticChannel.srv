@@ -1,6 +1,15 @@
 uint32 id
-#Type: 0: acoustic underwater channel
-uint32 type
 
+#Bandwidth of propagation in Hz
+float64 bandwidth
+
+#Temperature of water (C)
+float64 temperature
+
+#Salinty of water (ppt)
+float64 salinity
+
+#Noise level in dB
+float64 noiseLvl
 ---
 bool res
