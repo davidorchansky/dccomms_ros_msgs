@@ -4,8 +4,14 @@ uint32 mac
 string frameId
 uint32 maxTxFifoSize
 
-#bitrate = bps
-uint32 bitrate
+#Symbols per second
+uint32 symbolsPerSecond
+
+#The coding efficiency: number of symbols per bit.
+float64 codingEff
+
+#The bit error rate.
+float64 bitErrorRate
 
 #Maximum transmission range in m (W).
 float64 range
