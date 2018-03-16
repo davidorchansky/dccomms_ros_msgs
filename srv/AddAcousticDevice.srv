@@ -4,6 +4,9 @@ uint32 mac
 string frameId
 uint32 maxTxFifoSize
 
+#Battery energy (J)
+float64 batteryEnergy
+
 #Symbols per second
 uint32 symbolsPerSecond
 
