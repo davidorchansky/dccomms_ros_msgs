@@ -13,5 +13,9 @@ uint32 minDistance
 float64 minPktErrorRate
 float64 pktErrorRateIncPerMeter
 
+#Rate Error Model (ns3):
+string errorRateExpr
+string errorUnit
+
 ---
 bool res
