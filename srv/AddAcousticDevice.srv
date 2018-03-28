@@ -52,5 +52,8 @@ float64 PIdle
 #Mac protocol: broadcast MAC ; T-MAC ; FAMA ; Slotted-FAMA ; UWAN-MAC ; COPE-MAC ; ALOHA ; R-MAC ; GOAL
 string macProtocol
 
+#Logging
+string logLevel
+
 ---
 bool res

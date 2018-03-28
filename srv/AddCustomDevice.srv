@@ -17,5 +17,8 @@ float64 pktErrorRateIncPerMeter
 string errorRateExpr
 string errorUnit
 
+#logging
+string logLevel
+
 ---
 bool res

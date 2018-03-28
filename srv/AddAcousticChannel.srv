@@ -11,5 +11,8 @@ float64 salinity
 
 #Noise level in dB
 float64 noiseLvl
+
+#Logging
+string logLevel
 ---
 bool res
