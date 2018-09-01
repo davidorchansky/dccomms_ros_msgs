@@ -5,7 +5,10 @@ uint32 maxTxFifoSize
 
 #bps
 float64 bitrate
-float64 bitrateSd
+
+#milliseconds
+float64 txJitter
+float64 rxJitter
 
 #intrinsic delay in ms
 float64 intrinsicDelay
