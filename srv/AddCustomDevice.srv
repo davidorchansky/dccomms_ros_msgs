@@ -28,5 +28,8 @@ string errorUnit
 #logging
 string logLevel
 
+#Mac protocol: broadcast MAC ; T-MAC ; FAMA ; Slotted-FAMA ; UWAN-MAC ; COPE-MAC ; ALOHA ; R-MAC ; GOAL
+string macProtocol
+float64 macDistance
 ---
 bool res
