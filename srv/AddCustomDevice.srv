@@ -1,6 +1,7 @@
 string dccomms_id
 uint32 mac
 string frame_id
+string ref_frame
 uint32 max_tx_fifo_size
 
 #bps
