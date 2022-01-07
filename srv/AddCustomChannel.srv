@@ -1,7 +1,7 @@
 uint32 id
-float64 minPrTime
-float64 prTimeIncPerMeter
-string logLevel
+float64 min_pr_time
+float64 pr_time_inc_per_meter
+string log_level
 ---
 bool res
 

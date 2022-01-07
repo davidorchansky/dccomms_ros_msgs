@@ -10,9 +10,9 @@ float64 temperature
 float64 salinity
 
 #Noise level in dB
-float64 noiseLvl
+float64 noise_lvl
 
 #Logging
-string logLevel
+string log_level
 ---
 bool res
