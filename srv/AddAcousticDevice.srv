@@ -2,7 +2,7 @@ string dccomms_id
 uint32 type
 uint32 mac
 string frame_id
-string ref_frame
+string relative_tf_id
 uint32 max_tx_fifo_size
 
 #Battery energy (J)
